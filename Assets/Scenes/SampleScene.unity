@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mediaPlayer: {fileID: 1225552083}
   _videos: {fileID: 11400000, guid: 69d25c60988680247b974a1c9a66b46a, type: 2}
-  _printVideoName: {fileID: 0}
+  _printVideoName: {fileID: 2137330671}
 --- !u!114 &310688889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mediaPlayer: {fileID: 1225552083}
   _videos: {fileID: 11400000, guid: 69d25c60988680247b974a1c9a66b46a, type: 2}
-  _printVideoName: {fileID: 0}
+  _printVideoName: {fileID: 2137330671}
 --- !u!114 &523106848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1762,10 +1762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1aa23b67355cac40907216698dd4244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsCollapsed: 0
   _mediaPlayer: {fileID: 1225552083}
   _videoPanel: {fileID: 28853083}
   _clickableButtons: []
-  IsCollapsed: 0
 --- !u!1 &1406329060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mediaPlayer: {fileID: 1225552083}
   _videos: {fileID: 11400000, guid: 69d25c60988680247b974a1c9a66b46a, type: 2}
-  _printVideoName: {fileID: 0}
+  _printVideoName: {fileID: 2137330671}
 --- !u!114 &1406329063
 MonoBehaviour:
   m_ObjectHideFlags: 0
