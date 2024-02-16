@@ -1,6 +1,4 @@
 using RenderHeads.Media.AVProVideo;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeVideoRef : MonoBehaviour

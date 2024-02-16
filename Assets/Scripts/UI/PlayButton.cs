@@ -1,7 +1,5 @@
 using RenderHeads.Media.AVProVideo;
 using RenderHeads.Media.AVProVideo.Demos;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayButton : MonoBehaviour
