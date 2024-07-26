@@ -8,23 +8,24 @@ public class PlayButton : MonoBehaviour
     [SerializeField] private MediaPlayer _mediaPlayer;
     [SerializeField] private MediaPlayerUI _mediaPlayerUI;
     [SerializeField] private ChangeVideoRef _changeVideoRef;
+    [SerializeField] private CollapseButton _collapseButton;
 
     public void PlayFirst() {
         if(IsFirstSession) {
             _changeVideoRef.ChangeVideoReference(0);
-            CollapseButton.Instance.CollapsePanel();
+            _collapseButton.CollapsePanel();
             IsFirstSession = false;
         }
     }
 
     public void ClosePanel() {
-        if(!CollapseButton.Instance.IsCollapsed)
-            CollapseButton.Instance.CollapsePanel();
+        if(!_collapseButton.IsCollapsed)
+            _collapseButton.CollapsePanel();
     }
 
     // should be on the event list, higher than ClosePanel
     public void ResetVideoTime() { 
-        if (!CollapseButton.Instance.IsCollapsed)
+        if (!_collapseButton.IsCollapsed)
             _mediaPlayer.Control.Seek(0);
     }
 

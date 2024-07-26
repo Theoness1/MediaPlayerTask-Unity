@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class CollapseButton : MonoBehaviour
 {
-    public static CollapseButton Instance;
     public bool IsCollapsed = false;
     [SerializeField] private MediaPlayer _mediaPlayer;
     [SerializeField] private RectTransform _videoPanel;
@@ -13,15 +12,10 @@ public class CollapseButton : MonoBehaviour
 
     private void Start()
     {
-        _clickableButtons = GameObject.FindGameObjectsWithTag("ClickableButton");
         _xPos = _videoPanel.position.x;
         _panelWidth = _videoPanel.rect.width;
     }
     
-    public CollapseButton() {
-        Instance = this;
-    }
-
     public void PlayPauseVideo() {
         if(IsCollapsed)
             _mediaPlayer.Play();
