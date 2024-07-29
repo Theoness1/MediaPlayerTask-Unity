@@ -14,7 +14,7 @@ public class ChangeVideoRef : MonoBehaviour
         {
             PlayButton.IsFirstSession = false;
             _mediaPlayer.OpenMedia(MediaPathType.AbsolutePathOrURL, _cloudVideoData.ClipsURL[clipNum], false);
-            _printVideoName.DeleteSymbolsInName(_cloudVideoData.ClipsURL[clipNum]);
+            _printVideoName.ChangeText(_cloudVideoData.ClipNames[clipNum]);
             _collapseButton.CollapsePanel();
             _currentClipNum = clipNum;
         }
