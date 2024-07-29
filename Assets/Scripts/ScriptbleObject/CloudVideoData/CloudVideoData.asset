@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CloudVideoData
   m_EditorClassIdentifier: 
   ClipsURL:
-  - https://i.imgur.com/6uigJlD.mp4
-  - https://i.imgur.com/ZSRlGFj.mp4
-  - https://i.imgur.com/pbyeb4D.mp4
+  - https://storage.yandexcloud.net/viavr.global/CARTOONS/Peppa_Pig/Peppa_Pig_s01e40_Daddy_Gets_Fit.mp4
+  - https://storage.yandexcloud.net/viavr.global/CARTOONS/Peppa_Pig/Peppa_Pig_s01e41_Shopping.mp4
+  - https://storage.yandexcloud.net/viavr.global/CARTOONS/Peppa_Pig/Peppa_Pig_s01e38_Sleepy_Princess.mp4
