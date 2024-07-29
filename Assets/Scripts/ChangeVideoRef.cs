@@ -7,7 +7,7 @@ public class ChangeVideoRef : MonoBehaviour
     [SerializeField] private CloudVideoData _cloudVideoData;
     [SerializeField] private PrintVideoName _printVideoName;
     [SerializeField] private CollapseButton _collapseButton;
-    private static int? _currentClipNum;
+    private static int _currentClipNum = -1;
 
     public void ChangeVideoReference(int clipNum) {
         if (clipNum != _currentClipNum)
