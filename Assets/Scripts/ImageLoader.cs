@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class ImageLoader : MonoBehaviour
 {
     [SerializeField] private RawImage[] _rawImages;
+    [SerializeField] private GameObject[] _loadingRings;
     [SerializeField] private List<string> _imageUrls;
 
     private void Start()
@@ -29,6 +30,7 @@ public class ImageLoader : MonoBehaviour
                 Texture2D texture = new Texture2D(2, 2);
                 texture.LoadImage(fileData);
                 _rawImages[i].texture = texture;
+                _loadingRings[i].SetActive(false);
             }
             else
             {
@@ -39,6 +41,7 @@ public class ImageLoader : MonoBehaviour
                 {
                     Texture2D texture = DownloadHandlerTexture.GetContent(www);
                     _rawImages[i].texture = texture;
+                    _loadingRings[i].SetActive(false);
 
                     byte[] textureBytes = texture.EncodeToPNG();
                     File.WriteAllBytes(cachePath, textureBytes);
