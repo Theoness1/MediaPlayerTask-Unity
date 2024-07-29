@@ -4,4 +4,5 @@ using UnityEngine;
 public class CloudVideoData : ScriptableObject
 {
     public string[] ClipsURL;
+    public string[] ClipNames;
 }
