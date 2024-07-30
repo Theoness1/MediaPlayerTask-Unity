@@ -9,7 +9,7 @@ public class ImageLoader : MonoBehaviour
 {
     [SerializeField] private RawImage[] _rawImages;
     [SerializeField] private GameObject[] _loadingRings;
-    [SerializeField] private List<string> _imageUrls;
+    [SerializeField] private string[] _imageUrls;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class ImageLoader : MonoBehaviour
 
     private IEnumerator LoadImage()
     {
-        for (int i = 0; i < _imageUrls.Count; i++)
+        for (int i = 0; i < _imageUrls.Length; i++)
         {
             string url = _imageUrls[i];
             string cachePath = Path.Combine(
